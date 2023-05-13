@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>769</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:&quot;green&quot;
+</string>
+  </property>
+  <widget class="QLabel" name="ladelabel">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>40</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Rules</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backButton">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>700</y>
+     <width>230</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>230</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>230</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:&quot;lightblue&quot;
+</string>
+   </property>
+   <property name="text">
+    <string>Back to menu</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>120</y>
+     <width>501</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:&quot;green&quot;
+</string>
+   </property>
+   <property name="text">
+    <string>1 point: A, E, I, O, U, L, N, S, T, R
+2 points: D, G
+3 points: B, C, M, P
+4 points: F, H, V, W, Y
+5 points: K
+8 points: J, X
+10 points: Q, Z
+
+DW (Double Word) - Points for created word are multiplied by 2
+TW (Triple Word) - Points for created word are multiplied by 3
+DL (Double Letter) - Points for put letter are multiplied by 2
+TL (Triple Letter) - Points for put letter are multiplied by 3
+
+PLAYER-END-OF-PARTICIPATING-IN-GAME:
+    The player is no longer allowed to participate in the game if they:
+        1) Swapped letters 3 times in a row
+        2) Created a non-existent word or not putting a single letter on
+            a board 2 times in a row
+
+
+END-OF-GAME: 
+    The game will be finished when less than 7 letters are left in bag
+                      OR
+    All of the players are not permitted to play due to number of swapped
+    letters few times in a row or not creating existing word || not putting a letter
+    on a board few times in a row
+
+IMPORTANT!
+    The player is not allowed to create a new word from the tiles
+    which have been put by him during the same move</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
